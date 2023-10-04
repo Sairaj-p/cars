@@ -27,21 +27,7 @@ function Card() {
 if(data.cars == null){
   dispatch(fetchcarslist())}
 
-//    function page_change(e,query) {
-//     e.preventDefault();
-//     if(query==="+"){
-//         console.log(query)
-//      } else if (query === "-"){
-//       console.log(query)
-
-//     }
-//     query = parseInt(query)
-    
-// };
-
-
 useEffect(() => {
-  // setCarList(carsdata.filter(filtercars))
   var l = new Array()
   carsdata.map((car) =>{
     if (parseInt(car.Id)<=6+(6*PageCount) && 1+(6*PageCount)<=parseInt(car.Id)){
@@ -53,9 +39,6 @@ useEffect(() => {
   console.log("CarsList",CarList)
 }, [PageCount]);
 
-const filtercars = (car)=>{
-  return 1+(6*PageCount)<=car.Id<=6+(6*PageCount)
-}
 
 const page_change = (query)=>{
   if(query==="+"){

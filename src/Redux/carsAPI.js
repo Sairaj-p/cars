@@ -6,11 +6,11 @@ export function fetchcars(){
     });
 }
 
-// export function fetchresult(prompt){
-//     return new Promise(async(resolve)=>{
-//         const query = `Name=${prompt}`
-//         const response = await fetch("http://localhost:3000/products?"+query)
-//         const data = await response.json()
-//         resolve({data})
-//     });
-// }
+export function fetchresult(prompt){
+    return new Promise(async(resolve)=>{
+        const query = `Name=${prompt}`
+        const response = await fetch("http://localhost:3000/products?Name_like="+query)
+        const data = await response.json()
+        resolve({data})
+    });
+}
