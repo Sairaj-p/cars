@@ -4,6 +4,7 @@ import Logo from "../Assests/Search_logo.png"
 
 function Navbar() {
   return (
+    <div className='w-full fixed'>
     <div className='w-auto h-12 bg-slate-200 mx-2 mt-2 rounded-md flex '>
         <div className='flex flex-0 bg-white w-1/3 h-auto mx-3 my-2 rounded-md'>
         <input name="query" className='ml-2 w-full flex-0 bg-white text-left' defaultValue={"Search"}/>
@@ -17,7 +18,7 @@ function Navbar() {
         </div>
         <div className='flex-3 w-full'></div>
        
-    </div>
+    </div></div>
   )
 }
 

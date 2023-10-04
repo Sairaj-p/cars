@@ -24,7 +24,7 @@ if(data.cars == null){
 
   console.log("data",carlist)
   return (
-    <div className="App w-screen h-screen fixed bg-slate-300">
+    <div className="App w-full h-auto bg-slate-300">
       <Navbar/>
       <Page/>
     </div>
